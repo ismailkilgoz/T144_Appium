@@ -1,4 +1,4 @@
-package day02;
+package tests.day02;
 
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
@@ -82,10 +82,11 @@ public class Arabam {
         driver.findElementByXPath("//*[@text='Comfortline']").click();
 
         // Ucuzdan pahaliya siralama yaparak filtreleme yapilir
-        driver.findElementById("com.dogan.arabam:id/constraintLayoutSorting").click();
+        //driver.findElementById("com.dogan.arabam:id/constraintLayoutSorting").click();
+
+        action.press(PointOption.point(402,406)).release().perform();
 
         driver.findElementByXPath("(//android.widget.RelativeLayout[@resource-id=\"com.dogan.arabam:id/rlytBottomSheet\"])[2]").click();
-
         // Gelen en ucuz aracin 500.000 tl den buyuk oldugu dogrulanir
 
 
@@ -94,6 +95,7 @@ public class Arabam {
         String ilkAracFiyatText = driver.findElementByXPath("(//*[@resource-id=\"com.dogan.arabam:id/tvPrice\"])[1]").getText();
 
         String ilkAracFiyatDuzenleme = ilkAracFiyatText.replace(".", "").replace(" TL", "");
+        // replaceAll(\\D"
 
         int ilkAracFiyat = Integer.parseInt(ilkAracFiyatDuzenleme);
 
