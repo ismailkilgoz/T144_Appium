@@ -13,7 +13,7 @@ public class APK_Yukleme {
     AndroidDriver<AndroidElement>driver;
 
     @Test
-    public void deneme() throws MalformedURLException {
+    public void apkSetup() throws MalformedURLException {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel 4");//cihazin adi
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");//cihazin android olmasini tanimladik
