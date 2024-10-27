@@ -20,7 +20,7 @@ public class APK_Yukleme {
         caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.0");//Android in versiyonunu yazdik
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
         caps.setCapability(MobileCapabilityType.APP,
-                "C:\\Users\\Administrator\\IdeaProjects\\Appium_144\\App\\Kiwi.com - Book Cheap Flights_2023.14.0_Apkpure.apk");
+                "C:\\Users\\Administrator\\IdeaProjects\\Appium_144\\App\\all-currency-converter-3-9-0 (1).apk");
 
 
         driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"), caps);

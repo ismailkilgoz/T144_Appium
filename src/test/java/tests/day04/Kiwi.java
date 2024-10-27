@@ -3,17 +3,10 @@ package tests.day04;
 import Pages.KiwiPage;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.remote.MobileCapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import utilities.Driver;
 import utilities.ReusableMethods;
-
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.concurrent.TimeUnit;
 
 public class Kiwi {
 
@@ -46,7 +39,7 @@ public class Kiwi {
          */
 
         for (int i = 0; i < 3; i++) {
-            ReusableMethods.nextTiklamaMethodu(549, 2049, 500);
+            ReusableMethods.koordinatTiklamaMethodu(549, 2049, 500);
         }
 
         // Trip type,one way olarak secilir
@@ -90,7 +83,7 @@ public class Kiwi {
 
         // gidis tarihi ekim ayinin 30 u olarak secilir ve set date e tiklanir
         page.tarihbutonu.click();
-        ReusableMethods.nextTiklamaMethodu(545,1458,500);
+        ReusableMethods.koordinatTiklamaMethodu(545,1458,500);
         page.SetDatebutonu.click();
         Thread.sleep(2000);
 
